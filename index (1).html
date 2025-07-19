@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUGANA - Automation That Empowers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .floating {
+            animation: float 4s ease-in-out infinite;
+        }
+        .gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(90deg, #ec4899, #8b5cf6);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-[#0f0c29] via-[#302b63] to-[#24243e] text-white font-sans">
+    <!-- Navigation -->
+    <nav class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="https://i.imgur.com/pOI8Z9f.png" alt="HUGANA Logo" class="h-10">
+
+
+                <span class="text-xl font-bold gradient-text">HUGANA</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-pink-400 transition">About</a>
+                <a href="#solutions" class="hover:text-pink-400 transition">Solutions</a>
+                <a href="#different" class="hover:text-pink-400 transition">Differentiators</a>
+                <a href="#contact" class="px-4 py-2 bg-pink-600 rounded-full hover:bg-pink-700 transition">Contact</a>
+            </div>
+            <button class="md:hidden text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+   <!-- Hero Section -->
+<section class="container mx-auto px-6 py-20 md:py-32 text-center">
+  <div class="max-w-4xl mx-auto">
+    <!-- Headline -->
+    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+      <span class="gradient-text">Automation</span> That Empowers People
+    </h1>
+
+    <!-- Subheadline -->
+    <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto">
+      We build technology that simplifies complexity, eliminates noise, and amplifies human potential.
+    </p>
+
+    <!-- CTA Buttons -->
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a href="#contact" class="px-8 py-4 bg-pink-600 text-white rounded-full shadow-lg hover:bg-pink-700 transition transform hover:scale-105">
+        Get Started <i class="fas fa-arrow-right ml-2"></i>
+      </a>
+      <a href="#solutions" class="px-8 py-4 border border-white/20 rounded-full hover:bg-white/10 transition transform hover:scale-105">
+        Explore Solutions
+      </a>
+    </div>
+  </div>
+
+  <!-- Floating Logo with Tagline -->
+  <div class="mt-36 relative flex flex-col items-center text-center">
+    <!-- Glow effect behind logo -->
+    <div class="absolute w-72 h-72 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 blur-3xl opacity-30"></div>
+
+    <!-- Logo -->
+    <img 
+      src="https://i.imgur.com/pOI8Z9f.png" 
+      alt="HUGANA Logo Floating" 
+      class="h-32 md:h-40 z-10 floating opacity-95 drop-shadow-2xl transition-all duration-700 ease-in-out"
+    >
+
+    <!-- Tagline -->
+    <p class="mt-4 text-base md:text-lg font-medium text-pink-400 italic z-10 tracking-wide">
+      Your missing piece.
+    </p>
+  </div>
+</section>
+
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto px-6 py-5">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">
+                <span class="gradient-text">Who</span> We Are
+            </h2>
+            <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+                We are a purpose-driven technology company built on a powerful belief:
+                <span class="text-pink-400 font-semibold">automation should serve people — not replace them.</span>
+            </p>
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+                <div class="bg-white/5 p-6 rounded-xl backdrop-blur-sm border border-white/10 card-hover transition">
+                    <div class="text-pink-400 text-4xl mb-4">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Human-Centric</h3>
+                    <p class="text-gray-300">Every solution starts with empathy for the end user.</p>
+                </div>
+                <div class="bg-white/5 p-6 rounded-xl backdrop-blur-sm border border-white/10 card-hover transition">
+                    <div class="text-pink-400 text-4xl mb-4">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Fast Execution</h3>
+                    <p class="text-gray-300">We deliver working systems in days, not months.</p>
+                </div>
+                <div class="bg-white/5 p-6 rounded-xl backdrop-blur-sm border border-white/10 card-hover transition">
+                    <div class="text-pink-400 text-4xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Secure Foundation</h3>
+                    <p class="text-gray-300">Enterprise-grade security built into every solution.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="container mx-auto px-6 py-20 bg-gradient-to-b from-[#1a103d] to-[#0f0c29]">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">
+                    <span class="gradient-text">What</span> We Do
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Modular, ready-to-use platforms for the real world. No training required.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Solution Cards -->
+                <div class="bg-gradient-to-br from-[#1f1c2c] to-[#928dab] p-6 rounded-xl shadow-lg card-hover transition group">
+                    <div class="flex items-start">
+                        <div class="bg-pink-600 p-3 rounded-lg mr-4 group-hover:rotate-12 transition">
+                            <i class="fas fa-user-friends text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2 text-pink-300">Candidate Automation</h3>
+                            <p class="text-gray-200">Streamline workforce development and intake processes with our intelligent candidate management system.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-[#1f1c2c] to-[#928dab] p-6 rounded-xl shadow-lg card-hover transition group">
+                    <div class="flex items-start">
+                        <div class="bg-pink-600 p-3 rounded-lg mr-4 group-hover:rotate-12 transition">
+                            <i class="fas fa-camera text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2 text-pink-300">Facial Attendance</h3>
+                            <p class="text-gray-200">Effortless tracking using facial recognition photos with privacy-first design.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-[#1f1c2c] to-[#928dab] p-6 rounded-xl shadow-lg card-hover transition group">
+                    <div class="flex items-start">
+                        <div class="bg-pink-600 p-3 rounded-lg mr-4 group-hover:rotate-12 transition">
+                            <i class="fas fa-credit-card text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2 text-pink-300">Smart Payments</h3>
+                            <p class="text-gray-200">Full control of subscriptions, plans, and automated billing with real-time analytics.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-[#1f1c2c] to-[#928dab] p-6 rounded-xl shadow-lg card-hover transition group">
+                    <div class="flex items-start">
+                        <div class="bg-pink-600 p-3 rounded-lg mr-4 group-hover:rotate-12 transition">
+                            <i class="fas fa-comments text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2 text-pink-300">Conversational Flows</h3>
+                            <p class="text-gray-200">Automated onboarding and alerts via WhatsApp, Telegram, and SMS with natural language processing.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:col-span-2 bg-gradient-to-br from-[#1f1c2c] to-[#928dab] p-8 rounded-xl shadow-lg card-hover transition">
+                    <h3 class="text-2xl font-semibold mb-4 text-center text-pink-300">Custom SaaS Systems</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-4 text-center">
+                        <div class="bg-white/10 p-4 rounded-lg hover:bg-white/20 transition">
+                            <i class="fas fa-hard-hat text-pink-400 text-2xl mb-2"></i>
+                            <p>Construction Ops</p>
+                        </div>
+                        <div class="bg-white/10 p-4 rounded-lg hover:bg-white/20 transition">
+                            <i class="fas fa-dumbbell text-pink-400 text-2xl mb-2"></i>
+                            <p>Gym & Martial Arts</p>
+                        </div>
+                        <div class="bg-white/10 p-4 rounded-lg hover:bg-white/20 transition">
+                            <i class="fas fa-user-nurse text-pink-400 text-2xl mb-2"></i>
+                            <p>Elderly Remote Care</p>
+                        </div>
+                        <div class="bg-white/10 p-4 rounded-lg hover:bg-white/20 transition">
+                            <i class="fas fa-home text-pink-400 text-2xl mb-2"></i>
+                            <p>Rental & Property</p>
+                        </div>
+                        <div class="bg-white/10 p-4 rounded-lg hover:bg-white/20 transition">
+                            <i class="fas fa-landmark text-pink-400 text-2xl mb-2"></i>
+                            <p>Public Sector</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Differentiators Section -->
+    <section id="different" class="container mx-auto px-6 py-20">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">
+                    <span class="gradient-text">Why</span> Choose HUGANA
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    We don't just build software — we build relief from complexity.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/5 p-8 rounded-xl border border-white/10 backdrop-blur-sm card-hover transition">
+                    <div class="text-pink-400 text-3xl mb-4">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-pink-300">Speed to Deploy</h3>
+                    <p class="text-gray-300">Full systems delivered in days — not quarters. We focus on rapid iteration and immediate value.</p>
+                </div>
+
+                <div class="bg-white/5 p-8 rounded-xl border border-white/10 backdrop-blur-sm card-hover transition">
+                    <div class="text-pink-400 text-3xl mb-4">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-pink-300">Empathy by Design</h3>
+                    <p class="text-gray-300">No confusion. No friction. Just clarity. We obsess over intuitive user experiences.</p>
+                </div>
+
+                <div class="bg-white/5 p-8 rounded-xl border border-white/10 backdrop-blur-sm card-hover transition">
+                    <div class="text-pink-400 text-3xl mb-4">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-pink-300">Modular & Flexible</h3>
+                    <p class="text-gray-300">We adapt to your workflow — not the other way around. Mix and match components as needed.</p>
+                </div>
+
+                <div class="bg-white/5 p-8 rounded-xl border border-white/10 backdrop-blur-sm card-hover transition">
+                    <div class="text-pink-400 text-3xl mb-4">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-pink-300">Secure & Reliable</h3>
+                    <p class="text-gray-300">Enterprise-grade encryption and 99.9% uptime. Your data is always protected.</p>
+                </div>
+
+                <div class="bg-white/5 p-8 rounded-xl border border-white/10 backdrop-blur-sm card-hover transition">
+                    <div class="text-pink-400 text-3xl mb-4">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-pink-300">Scalable by Nature</h3>
+                    <p class="text-gray-300">From 1 to 1000 users — scale without stress. Our architecture grows with you.</p>
+                </div>
+
+                <div class="bg-white/5 p-8 rounded-xl border border-white/10 backdrop-blur-sm card-hover transition">
+                    <div class="text-pink-400 text-3xl mb-4">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-pink-300">Dedicated Support</h3>
+                    <p class="text-gray-300">Real humans answer your questions. No bots. No runaround. Just help when you need it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="container mx-auto px-6 py-20 bg-gradient-to-b from-[#1a103d] to-[#0f0c29]">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-block px-4 py-1 bg-white/10 rounded-full text-sm mb-6">
+                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <span class="ml-2">Rated 5/5 by our clients</span>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">
+                Trusted by <span class="gradient-text">Industry Leaders</span>
+            </h2>
+            
+            <div class="bg-white/5 p-8 rounded-xl border border-white/10 backdrop-blur-sm mb-8">
+                <div class="flex justify-center mb-6">
+                    <img src="https://i.imgur.com/pOI8Z9f.png" alt="HUGANA Logo" class="h-10">
+
+                </div>
+                <p class="text-xl italic text-gray-300 mb-6">
+                    "HUGANA transformed our candidate onboarding from a 3-week process to just 2 days. Their automation feels human, which is exactly what our team needed."
+                </p>
+                <p class="font-semibold text-pink-300">Sarah Johnson</p>
+                <p class="text-gray-400">HR Director, BuildRight Construction</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white/5 p-6 rounded-xl border border-white/10 backdrop-blur-sm">
+                    <p class="italic text-gray-300 mb-4">
+                        "The facial attendance system saved us 20 hours per week in manual tracking. Simple, effective, and our staff actually like using it."
+                    </p>
+                    <p class="font-semibold text-pink-300">Michael Chen</p>
+                    <p class="text-gray-400">Gym Owner, Iron Peak Fitness</p>
+                </div>
+                <div class="bg-white/5 p-6 rounded-xl border border-white/10 backdrop-blur-sm">
+                    <p class="italic text-gray-300 mb-4">
+                        "We needed a custom solution fast. HUGANA delivered in 10 days what others said would take 3 months. Game-changing partnership."
+                    </p>
+                    <p class="font-semibold text-pink-300">David Rodriguez</p>
+                    <p class="text-gray-400">CEO, SilverCare Services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="container mx-auto px-6 py-20">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">
+                Ready to <span class="gradient-text">Simplify</span> Your Workflow?
+            </h2>
+            <p class="text-xl text-gray-300 mb-10 max-w-3xl mx-auto">
+                We're not here to create complexity. We're here to eliminate it.
+                <span class="block text-pink-400 font-semibold mt-2">Real software. Real outcomes. Built fast.</span>
+            </p>
+            
+            <div class="bg-gradient-to-r from-[#1f1c2c] to-[#928dab] p-1 rounded-full max-w-md mx-auto mb-10">
+                <div class="bg-[#0f0c29] p-8 rounded-full">
+                    <p class="text-xl italic text-gray-300 mb-6">
+                        "If it doesn't exist, we'll build it. If it does, we'll make it better."
+                    </p>
+                    <div class="w-16 h-1 bg-pink-500 mx-auto mb-6"></div>
+                    <p class="text-sm text-gray-400">HUGANA Development Principle</p>
+                </div>
+            </div>
+            
+            <div class="bg-white/5 p-8 rounded-xl border border-white/10 backdrop-blur-sm max-w-2xl mx-auto">
+                <h3 class="text-2xl font-semibold mb-6">Let's Build Together</h3>
+                <form class="space-y-4 text-left">
+                    <div>
+                        <label for="name" class="block text-left mb-1">Your Name</label>
+                        <input type="text" id="name" class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-left mb-1">Email</label>
+                        <input type="email" id="email" class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-500">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-left mb-1">How Can We Help?</label>
+                        <textarea id="message" rows="4" class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full px-6 py-4 bg-pink-600 text-white rounded-full hover:bg-pink-700 transition transform hover:scale-105 mt-6">
+                        Send Message <i class="fas fa-paper-plane ml-2"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0a071a] py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center space-x-2 mb-6 md:mb-0">
+                    <img src="https://i.imgur.com/pOI8Z9f.png" alt="HUGANA Logo" class="h-10">
+
+
+                    <span class="text-xl font-bold gradient-text">HUGANA</span>
+                </div>
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="#" class="text-gray-400 hover:text-pink-400 transition">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-pink-400 transition">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-pink-400 transition">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                </div>
+                <div class="text-gray-400 text-sm">
+                    © 2023 HUGANA Technologies. All rights reserved.
+                </div>
+            </div>
+            <div class="border-t border-white/10 mt-8 pt-8 text-center text-gray-500 text-sm">
+                <p>Automation should serve people — not replace them.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+<div class="fixed bottom-6 right-6 z-50">
+  <a 
+    href="https://wa.me/14077241855" 
+    target="_blank" 
+    class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition transform hover:scale-110 floating"
+    aria-label="WhatsApp"
+  >
+    <i class="fab fa-whatsapp text-2xl"></i>
+  </a>
+</div>
+
+
+    <script>
+        // Simple script for mobile menu toggle (can be expanded)
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('button[class*="md:hidden"]');
+            //
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=naniccunha/hugana-com-new" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
